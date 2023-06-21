@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+
+:root {
+  --toastify-toast-width: 200px;
+  font-family: "Noto Sans Display", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* .rdt_TableHeadRow{
+  background: black;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mapbox-improve-map {
+  display: none;
+}

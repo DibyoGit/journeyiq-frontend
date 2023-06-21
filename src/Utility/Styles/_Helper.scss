@@ -1,0 +1,99 @@
+// ===== Mixins & Functions =====
+
+// Font
+// With Height
+@mixin font($size, $weight, $height) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+}
+
+// Without Height
+@mixin fontMin($size, $weight) {
+	font-size: $size;
+	font-weight: $weight;
+}
+
+// Screen Size Breakpoint Mixins
+// Small Mobile : <= 576px
+// Large Mobile : 577px - 768px
+// Tablet : 769px - 992px
+// Small Monitor : 993px - 1200px
+// Medium Monitor : 1201px - 1400px
+// Large Monitor : >= 1401px
+@mixin min($screen) {
+	@media (min-width: $screen) {
+		@content;
+	}
+}
+
+@mixin max($screen) {
+	@media (max-width: $screen) {
+		@content;
+	}
+}
+
+// Flexbox
+// Flex (Row)
+@mixin flex($align, $justify) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+}
+
+//Flex (Column)
+@mixin flexCol($align, $justify) {
+	display: flex;
+	flex-direction: column;
+	align-items: $align;
+	justify-content: $justify;
+}
+
+//Flex (Custom)
+@mixin flexCustom($dir, $align, $justify) {
+	display: flex;
+	flex-direction: $dir;
+	align-items: $align;
+	justify-content: $justify;
+}
+
+// Grid
+// Column Based
+@mixin gridCol($column, $align, $justify) {
+	display: grid;
+	grid-template-columns: $column;
+	align-items: $align;
+	justify-items: $justify;
+	justify-content: $justify;
+}
+
+// Row Based
+@mixin gridRow($row, $align, $justify) {
+	display: grid;
+	grid-template-rows: $row;
+	align-items: $align;
+	justify-items: $justify;
+	justify-content: $justify;
+}
+
+// Padding
+@mixin paddingVertical($top, $bottom) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
+
+@mixin paddingHorizontal($left, $right) {
+	padding-left: $left;
+	padding-right: $right;
+}
+
+// Margin
+@mixin marginVertical($top, $bottom) {
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+@mixin marginHorizontal($left, $right) {
+	margin-left: $left;
+	margin-right: $right;
+}

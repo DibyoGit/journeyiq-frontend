@@ -1,0 +1,265 @@
+@use "../../../Utility/Styles/Helper" as *;
+@use "../../../Utility/Styles/Variable" as *;
+
+.editorSection {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 6;
+}
+
+.addPackageContainer {
+  width: 1100px;
+  background-color: whitesmoke;
+  border: 1px solid rgba(0, 0, 0, 0.193);
+  /*  left: 25%; */
+  z-index: 2;
+  height: 95vh;
+  position: absolute;
+  border-radius: 6px;
+  /*   top: 10%; */
+  & * {
+    transition: all 0.1s linear;
+
+    font-family: "Nunito", sans-serif;
+  }
+
+  & .icon {
+    width: 24px;
+    height: 24px;
+    color: var(--clr_blueDark);
+    transition: none;
+  }
+
+  & :is(button, input, textarea) {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  & :is(h1, h2, h3, h4, h5, h6, p, a) {
+    color: var(--clr_blueDark);
+  }
+
+  & .packageForm {
+    @include flexCol(flex-start, flex-start);
+    width: 100%;
+    & .formHeading {
+      @include flex(center, space-between);
+      padding: 10px 20px;
+      width: 100%;
+      border-bottom: 1px solid  rgba(144, 144, 144, 0.098);
+      & .headingText {
+        font-size: 1.1rem;
+        font-weight: 600;
+
+        font-family: "Nunito", sans-serif;
+      }
+      & .message {
+          padding: 0.4rem;
+          background-color: var(--clr_redLightBg);
+          @include flex(center, space-between);
+        width: 100%;
+        border-radius:5px;
+        color: white;
+        width: 250px;
+        & p{
+        font-size: 00.6rem;
+        color: white;
+        letter-spacing: 0.2mm
+        }
+      }
+      & .headactions {
+        @include flex(center, flex-start);
+        gap: 10px;
+        & .submitBttn {
+          padding: 0.6rem 1rem;
+          background-color: var(--clr_blue);
+          color: white;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    & .formBody {
+      padding: 10px 15px;
+      width: 100%;
+      & .navs {
+        @include flex(center, flex-start);
+        width: max-content;
+        border-top: 1px solid rgba(128, 128, 128, 0.193);
+        & .nav {
+          padding: 0.5rem;
+          border-left: 1px solid rgba(128, 128, 128, 0.193);
+          font-weight: 600;
+          width: max-content;
+          width: 80px;
+        }
+        & .nav:last-child {
+          border-right: 1px solid rgba(128, 128, 128, 0.193);
+        }
+        & .nav:first-child {
+          background-color: white;
+        }
+      }
+      & .navPage {
+        @include flex(flex-start, flex-start);
+        gap: 15px;
+        & .col {
+          box-sizing: border-box;
+          gap: 10px;
+          width: 100%;
+          padding-top: 10px;
+         
+          background-color: white;
+          width: 80%;
+          padding: 20px;
+          overflow-y: scroll;
+          overflow-x: none;
+          border-right: 1px solid rgba(128, 128, 128, 0.193);
+          border-left: 1px solid rgba(128, 128, 128, 0.193);
+          border-bottom: 1px solid rgba(128, 128, 128, 0.193);
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          @include flexCol(flex-start, flex-start);
+          & :is(.description, .imageupload, .detaillist) {
+            width: 100%;
+            @include flexCol(flex-start, flex-start);
+            border-radius: 5px;
+            padding: 20px 20px;
+            background-color: whitesmoke;
+            gap: 10px;
+            & .contentheading {
+              width: 100%;
+              @include flex(center, space-between);
+              & .text {
+                font-size: 0.8rem;
+                font-family: "Nunito", sans-serif;
+                color: var(--clr_blue);
+                font-weight: 600;
+                letter-spacing: 0.1mm;
+                min-width: 80px;
+              }
+              & .contentAction {
+                margin: 0;
+                padding: 0;
+                & .icon {
+                  font-size: 0.8rem;
+                  padding: 4px;
+                  opacity: 0.6;
+                  border: 1px solid rgba(0, 0, 0, 0.178);
+                  border-left: none;
+                  background-color: white;
+                }
+                & .icon:first-child {
+                  border-left: 1px solid rgba(0, 0, 0, 0.161);
+                  border-top-left-radius: 3px;
+                  border-bottom-left-radius: 3px;
+                }
+              }
+             
+
+              & .input {
+                font-size: 1rem;
+                font-weight: var(--fw_medium);
+                color: var(--clr_blueDark);
+                width: 100%;
+                height: 40px;
+                border-radius: 5px;
+                padding: 10px 20px;
+                background-color: var(--clr_white);
+
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+                  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                &::placeholder {
+                  font-size: 1rem;
+                  color: var(--clr_blueDark);
+                  opacity: 0.5;
+                }
+                &:focus {
+                  outline: none;
+                  border: 1px solid var(--clr_blue);
+                }
+              }
+            }
+            & .contentbody {
+              width: 100%;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        & .col:last-child {
+          width: 20%;
+          background-color: whitesmoke;
+          border: none;
+          padding: 5px;
+          @include flexCol(flex-start, flex-start);
+          gap: 20px;
+          box-shadow: none;
+
+          & .package_row {
+            text-align: left;
+            @include flexCol(flex-start, flex-start);
+            gap: 5px;
+            & .package_row_title {
+              font-size: 0.9rem;
+            }
+            & .package_row_desc_container {
+              width: 180px;
+              display: flex;
+              gap: 5px;
+              & .package_row_desc {
+                @include flex(center, flex-start);
+                padding: 0.5rem;
+                background-color: white;
+                font-size: 0.8rem;
+                width: 100%;
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+                  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                border-radius: 4px;
+                & .icons {
+                  font-size: 1rem;
+                  margin-left: 6px;
+                }
+              }
+            }
+          }
+          & .toggler_option {
+            width: 180px;
+            @include flex(center, space-between);
+            & .text {
+              font-size: 0.8rem;
+              font-family: "Nunito", sans-serif;
+              color: var(--clr_blue);
+              font-weight: 600;
+              letter-spacing: 0.1mm;
+              min-width: 80px;
+            }
+          }
+        }
+        & .col:last-child::-webkit-scrollbar-track {
+          width: 5px;
+          height: 12px;
+          background-color: whitesmoke;
+        }
+      }
+    }
+  }
+}
+
+
+ ::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+ 
+::-webkit-scrollbar-thumb{
+  background-color: white;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkgrey;
+  border-radius: none;
+} 

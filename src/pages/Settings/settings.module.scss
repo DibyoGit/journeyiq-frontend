@@ -1,0 +1,48 @@
+@use '../../Utility/Styles/Helper' as * ;
+@use '../../Utility/Styles/Variable' as * ;
+
+*{
+
+  font-family: "Nunito", sans-serif;
+}
+
+.navlinks{
+  @include flex(flex-start,flex-start);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  width: max-content;
+  margin-bottom: .6rem;
+  user-select: none;
+  margin-top: 25px;
+  border-radius:8px ;
+  background-color: white;
+  text-align: center;
+  font-size: 24px;
+}
+:is(.active , .link){
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 1rem 0.8rem ;
+  border-left: 1px solid rgba(0, 0, 0, 0.05); 
+  text-align: center;
+  
+  
+}
+  .active:nth-child(1) , .link:nth-child(1){
+   border-left: none;
+}
+ .active{
+  background-color: var(--clr_blue);
+  color: white;
+}
+ .active:first-child{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px ;
+}
+ .active:last-child{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px ;
+}
+
+
+
+

@@ -1,0 +1,26 @@
+
+
+.imageContainer{
+    display: flex;
+    & .imgUploader{
+        padding: 10px ;
+        border: 1px dashed black;
+        display: flex;
+        align-items: center;
+        border-right: none;
+        & .icon{
+            font-size: 1.5rem;margin-right:10px ;
+        }
+        & .input{
+            display: none;
+        }
+    }
+    & .bttn{
+        background-color: var(--clr_blue);
+         color: white;
+         padding: 10px;
+         display: flex;
+         gap:4px;
+         align-items: center;
+    }
+}

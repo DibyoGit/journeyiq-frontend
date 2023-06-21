@@ -1,0 +1,105 @@
+@use "../../../Utility/Styles/Helper" as *;
+@use "../../../Utility/Styles/Variable" as *;
+
+
+.selectionBox {
+    @include flexCol(flex-start, flex-start);
+    width: 100%;
+    position: relative;
+    
+    width: 180px;
+    & .group {
+      /* flex-basis: calc(50% - 10px); */
+  
+      gap: 10px;
+      height: 100%;
+      
+      & .title {
+        font-size: 1rem;
+        font-weight: var(--fw_semiBold);
+        opacity: 0.8;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+  
+      & .input {
+        font-family: var(--font_primary);
+        font-size: 1rem;
+        width: 180px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        color: var(--clr_blueDark);
+        height: 40px;
+        border-radius: 5px;
+        padding: 10px ;
+        background-color: var(--clr_white);
+  
+        &::placeholder {
+          font-size: 1rem;
+          color: var(--clr_blueDark);
+          opacity: 0.5;
+        }
+      }
+      & .input:focus{
+        outline:none;
+        border: 1px solid var(--clr_blue);
+      }
+    }
+    & .select {
+      user-select: none;
+      position: absolute;
+      z-index: 1;
+      max-height: 9.1rem;/* 
+      border: 1px solid red; */
+       width: 100%;
+       width: 180px;
+      overflow-y: scroll;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      top: 44px;
+      border-radius: 5px;
+      
+      & .selectValues {
+          background-color: white;/* 
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+          border-radius: 4px;
+          /* width:18rem; */
+          width: 100%;
+          cursor: pointer;
+          
+        & .title {
+          padding: 0.7rem 1rem;
+  
+          text-align: left;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          font-size: 0.8rem;
+
+      }
+  
+     
+    }
+
+    
+    & .selectValues :hover{
+      background-color: var(--clr_blue);
+      color: white;
+    }
+  }
+        /* Scrollbar */
+  ::-webkit-scrollbar {
+      width: 8px;
+      height: var(--scrollbar_dimention);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      border: 1px solid var(--clr_white);
+      background: var(--clr_white);
+      opacity: 0.2  ;
+      border-radius: 5px;
+  
+  }
+  ::-webkit-scrollbar-thumb:hover {
+      background: var(--clr_grey);
+      opacity: 0.5;
+      
+  }
+  }

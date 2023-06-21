@@ -1,0 +1,48 @@
+:root {
+	/* Colour */
+	--clr_white: hsl(0, 0%, 100%);
+	--clr_whiteTransparent: hsla(0, 100%, 100%, 0.2);
+	--clr_grey: hsl(0, 0%, 50%);
+	--clr_greyLight: hsl(209.9, 55%, 92%);
+	--clr_black: hsl(0, 0%, 0%);
+	--clr_blackFade: hsl(0, 0%, 20.8%);
+	--clr_blackTransparent: hsla(0, 0%, 0%, 0.3);
+
+	--clr_red: hsl(2.2, 100%, 65%);
+	--clr_redLight: hsl(2.2, 100%, 90%);
+	
+	--clr_redLightBg: rgb(255, 157, 153);
+
+	--clr_yellow: rgb(255, 219, 77);
+    --clr_gold: rgb(250, 202, 11);
+	
+	--clr_green: hsl(161.1, 61.8%, 52.7%);
+	--clr_greenDark: hsl(161.1, 90%, 43%);
+	--clr_greenLight: hsl(161.1, 61.8%, 90%);
+	--clr_greenShadow: hsla(161.1, 61.8%, 52.7%, 0.5);
+
+	--clr_blue: hsl(214, 69%, 46%);
+	--clr_blueLight: hsl(213.6, 100%, 95.1%);
+	--clr_blueDark: hsl(214.6, 75%, 20%);
+	
+	--clr_blueDarkBg: rgb(15, 62, 126);
+	
+	--clr_blueDeepDark: rgb(2, 15, 34);
+	--clr_blueBG: hsl(212.7, 100%, 97.8%);
+	--clr_blueShadow: hsla(209.9, 100%, 50%, 0.4);
+	--clr_blueShadowLight: hsla(209.9, 100%, 50%, 0.15);
+	
+	--clr_blueShadowBG: rgba(1, 37, 74, 0.952);
+
+	/* Font Family */
+	--font_primary: "Poppins", sans-serif;
+
+	/* Font Weight */
+	--fw_light: 300;
+	--fw_regular: 400;
+	--fw_medium: 500;
+	--fw_semiBold: 600;
+	--fw_bold: 700;
+	--fw_extraBold: 800;
+	--fw_black: 900;
+}
