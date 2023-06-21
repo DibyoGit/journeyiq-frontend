@@ -12,8 +12,11 @@ function NavigationBar() {
     }
     return (
         <div className='text-slate-800 w-fit bg-[#0e5ba9] h-full p-2 flex flex-col gap-4 relative' >
-            <Logo className='text-xs text-[#89b2d3]' />
+           {/*  <Logo className='text-xs text-[#89b2d3]' /> */}
             {/*  <Avatar/> */}
+            <div>
+            {""}
+                </div>
             <div className='text-lg text-white  flex flex-col justify-between h-full '>
                 <div>
 

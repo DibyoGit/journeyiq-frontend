@@ -22,7 +22,7 @@ export const settingslink = [
 
 export const usersetting ={
   title:"Profile",
-  subtitle:"Your email address is your identity on JourneyIQ and is used to log in.",
+  subtitle:"Your email address is your identity that is used to log in.",
   form: [
     {
         id:"email",

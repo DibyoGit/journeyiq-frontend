@@ -147,14 +147,14 @@ function Logintwo() {
         pauseOnHover
         theme="colored" />
 
-      <div className='w-2/3 h-full  bg-bg-3 bg-auto bg-blue flex flex-row p-5' style={{ backgroundImage: "url('/assests/img/login.png')" }}>
-        <h1 className='text-3xl font-semibold text-sky-700 font-primary font-[#063970]'>JourneyIQ</h1>
+      <div className='w-2/3 h-full  bg-bg-3 bg-auto bg-blue flex flex-row p-5' style={{ backgroundImage: "url('/assests/img/login.png')" , backgroundRepeat:'no-repeat' , backgroundPosition:'center' }}>
+        <h1 className='text-3xl font-semibold text-sky-700 font-primary font-[#063970]'></h1>
       </div>
 
       
         <div className=' h-full flex flex-col justify-center items-center '>
 
-        <h1 className='font-semibold text-cyan-900 mb-10 text-3xl font-primary'> WELCOME To JourneyIQ </h1>
+        <h1 className='font-semibold text-cyan-900 mb-10 text-3xl font-primary'> WELCOME  </h1>
       
 
         

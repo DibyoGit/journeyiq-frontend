@@ -51,7 +51,7 @@ function ScriptSettings() {
     getScript()
   }, [close , DomainID])
 
-  let val = `<script type="text/javascript" src="https://stark-sea-62993.herokuapp.com/JourneyScript/journeyIQ.js"></script><script>trackInit("${script.domainSlug}");</script>`
+  let val = `<script type="text/javascript" src="https://stark-sea-62993.herokuapp.com/JourneyScript/project.js"></script><script>trackInit("${script.domainSlug}");</script>`
 
 
 return (
