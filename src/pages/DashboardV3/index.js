@@ -33,7 +33,7 @@ export function Dashboard() {
     return (
         <div className=" p-1  ">
             <div className="flex flex-row justify-between items-center pl-4">
-             <h3 className="text-lg font-md">Dashobard</h3>
+             <h3 className="text-lg font-md">Dashboard</h3>
             <Link to="/dashboard/V1" className=" flex justify-end items-center text-[10px] text-blue-400 gap-2 px-2"> <BiArrowFromLeft /> Go to Dashboard-V1</Link>
             </div>
             <div className="flex flex-col p-4 gap-4   ">

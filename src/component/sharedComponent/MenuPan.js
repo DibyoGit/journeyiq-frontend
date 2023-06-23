@@ -56,7 +56,7 @@ function MenuPan({ options }) {
 
   return (
     <div className='flex  flex-row justify-between w-full p-4 text-slate-400 items-center'>
-      <span className='text-sm font-semibold'>WELCOME BACK, {userName?.toUpperCase()}</span>
+      <span className='text-sm font-semibold'>WELCOME BACK</span>
       <div className='flex items-center text-slate-900 gap-2 text-sm'>
         <div>
          
